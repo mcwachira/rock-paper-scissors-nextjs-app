@@ -1,6 +1,7 @@
 import classes from './Game.module.css'
 import Image from 'next/image'
-
+import { Fragment, useState, useEffect } from 'react'
+import { Data } from '../../data/data'
 
 
 
@@ -26,7 +27,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
             setHouse(Data[randomNumber].value)
 
         }, 2000)
-    }, [randomNumber])
+    }, [])
 
     const Results = () => {
         const choice = Data[myChoice].value
@@ -59,7 +60,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
     }
     useEffect(() => {
         Results()
-    }, [Results])
+    }, [house])
 
 
     return (

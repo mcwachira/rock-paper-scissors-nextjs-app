@@ -24,11 +24,11 @@ module.exports = {
     /* Handle image imports
     https://jestjs.io/docs/webpack#handling-static-assets */
 
-        '^.+\\.svg$': 'jest-svg-transformer',
+    '^.+\\.svg$': 'jest-svg-transformer',
     '^.+\\.(jpg|jpeg|png|gif|webp|avif|svg)$':
       '<rootDir>/__mocks__/fileMock.js',
 
-  
+
   },
 
   //this will ignore the node module files and .next files
@@ -42,8 +42,8 @@ module.exports = {
     //enables importing of svg as components
 
     //   "^.+\\.svg$": "<rootDir>/__mocks__/svgTransform.js"
-//      '^.+\\.jsx?$': 'babel-jest',
-//   '^.+\\.svg$': 'jest-svg-transformer',
+    //      '^.+\\.jsx?$': 'babel-jest',
+    //   '^.+\\.svg$': 'jest-svg-transformer',
   },
   transformIgnorePatterns: [
     '/node_modules/',

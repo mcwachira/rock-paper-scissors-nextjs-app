@@ -1,5 +1,5 @@
 import Head from 'next/head'
-// import Image from 'next/image'
+import Image from 'next/image'
 import classes from '../styles/Home.module.css'
 import{useState , useEffect} from 'react'
 
@@ -34,17 +34,13 @@ export default function Home() {
     })
   return (
     <div >
- 
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-   
       <Header Score={score} />
  
    
-        {/* conditional rendering of the game component and hands component based on the value of myChoice */}
    {myChoice >= 0 ? (
       <Game myChoice={myChoice} Score={score} setScore={setScore} setMyChoice={(choice) => setMyChoice(choice)} />
   ): (
