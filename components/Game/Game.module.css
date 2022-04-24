@@ -1,8 +1,7 @@
 .game {
 
-    width: 900px;
-    margin-top: 1rem;
-
+    width: 60%;
+    margin: 2rem auto;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -27,7 +26,8 @@
     justify-content: center;
     border-radius: 50%;
     background-color: #fff;
-    padding: 4.5rem 3.5rem;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,17 +36,6 @@
     margin: 0; */
 }
 
-.icon {
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 2.5rem 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s;
-    width: 150px;
-    height: 150px;
-}
 
 
 
@@ -80,8 +69,11 @@
     align-items: center;
 }
 
-.game .results h1 {
-    font-size: 2.2rem;
+
+.results__heading {
+    font-size: 2.7rem;
+    margin-bottom: 3rem;
+    color: #fff
 }
 
 .game .results button {
@@ -97,4 +89,17 @@
 .game .results button:hover {
     background-color: bisque;
     transform: translate3d(0px, -2px, 0px);
+}
+
+@media screen and (max-width: 768px) {
+
+    .game {
+        width: 100%;
+        margin: 2rem 1rem;
+    }
+
+    .results {
+        margin: 1rem 4rem;
+    }
+
 }

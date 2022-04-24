@@ -66,3 +66,17 @@
 
     transform: translate3d(0px, -8px, 0px);
 }
+
+@media screen and (max-width: 768px) {
+
+    .hands {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+        padding: 1rem .1rem;
+    }
+
+
+
+}

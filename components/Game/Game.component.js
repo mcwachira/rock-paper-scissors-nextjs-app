@@ -17,6 +17,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
 
     let houseData = ['rock', 'paper', 'scissors']
 
+    //function to generate a random number which will be used by the pc to choose an hand
     const randomNumber = Math.floor(Math.random() * houseData.length)
 
     useEffect(() => {
@@ -31,6 +32,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
     const Results = () => {
         const choice = Data[myChoice].value
 
+        //using a switch statement to choose the winner  based on the hand selected and update the score 
         switch (choice + house) {
 
             case "scissorspaper":
@@ -89,7 +91,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
 
                 <div className={classes.results}>
                     <div className={classes.results__heading}>
-                        Results: {winner === 'win' && <h2> You  Win</h2>}
+                     {winner === 'win' && <h2> You  Win</h2>}
                         {winner === 'loose' && <h2> You  Loose</h2>}
                         {winner === 'draw' && <h2>         It is  a tie!</h2>}
                     </div>
