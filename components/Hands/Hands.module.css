@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hands {
+    background: url('../../public/images/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem 5rem;
+}
+
+
+.icon {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 2.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    width: 150px;
+    height: 150px;
+}
+
+
+
+
+.paper {
+    border: 15px solid var(--paper-gradient);
+
+    margin-right: 5rem;
+
+}
+
+
+.scissors {
+
+    border: 15px solid var(--scissor-gradient);
+}
+
+
+
+
+.rock {
+
+    border: 15px solid var(--rock-gradient);
+    transition: all .4s;
+}
+
+
+
+
+.scissors:hover,
+.paper:hover,
+.rock:hover {
+    cursor: pointer;
+
+    transform: translate3d(0px, -8px, 0px);
+}
