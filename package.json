@@ -1,20 +1,29 @@
 {
-  "name": "rock-paper-scissors-app",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
-  },
-  "devDependencies": {
-    "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
-  }
+	"name": "rock-paper-scissors-app",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"test": "jest"
+	},
+	"dependencies": {
+		"@svgr/webpack": "^6.2.1",
+		"next": "12.1.5",
+		"react": "18.0.0",
+		"react-dom": "18.0.0"
+	},
+	"devDependencies": {
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.1.1",
+		"babel-jest": "^27.5.1",
+		"eslint": "8.14.0",
+		"eslint-config-next": "12.1.5",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^27.5.1",
+		"jest-svg-transformer": "^1.0.0",
+		"react-test-renderer": "^18.0.0"
+	}
 }

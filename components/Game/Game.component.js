@@ -1,7 +1,6 @@
 import classes from './Game.module.css'
 import Image from 'next/image'
-import { Fragment, useState, useEffect } from 'react'
-import { Data } from '../../data/data'
+
 
 
 

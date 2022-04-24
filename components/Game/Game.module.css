@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.board>div {
+.game>div {
     flex: 1;
 }
 
