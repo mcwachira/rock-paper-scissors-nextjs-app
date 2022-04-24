@@ -26,7 +26,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
             setHouse(Data[randomNumber].value)
 
         }, 2000)
-    }, [])
+    }, [randomNumber])
 
     const Results = () => {
         const choice = Data[myChoice].value
@@ -59,7 +59,7 @@ const Game = ({ myChoice, setMyChoice, Score, setScore }) => {
     }
     useEffect(() => {
         Results()
-    }, [house])
+    }, [Results])
 
 
     return (
