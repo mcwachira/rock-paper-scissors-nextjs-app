@@ -8,6 +8,7 @@ import{useState} from 'react'
 import Header from '../components/Header/Header.component'
 import Rules from '../components/Rules/Rules.component'
 import Hands from '../components/Hands/Hands.component'
+import Game  from '../components/Game/Game.component'
 
 export default function Home() {
 
@@ -29,8 +30,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header Score={score} />
-
+ 
+   
+   {myChoice >= 0 ? (
+      <Game myChoice={myChoice} Score={score} setScore={setScore} setMyChoice={(choice) => setMyChoice(choice)} />
+  ): (
            <Hands setChoice={(value) => setMyChoice(value)} />
+  )
+   }
+      
   
   <footer className={classes.footer}>
     <div className={classes.rules} onClick={() => setOpen(!open)}>
