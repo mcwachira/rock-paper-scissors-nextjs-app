@@ -1,10 +1,15 @@
 
 import classes from './Header.module.css';
 import Image from 'next/image';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import HeaderIcon from '../../public/images/logo.svg'
 
 const Header = ({ Score }) => {
+
+
+    useEffect(() => {
+     localStorage.setItem('score', JSON.stringify(Score))
+    })
     return (
 
         <Fragment>
@@ -16,6 +21,7 @@ const Header = ({ Score }) => {
                     <h2>Score</h2>
                     <span className={classes.scoreValue}>
                         {Score}
+                 
                     </span>
                 </div>
 

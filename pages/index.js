@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import classes from '../styles/Home.module.css'
-import{useState} from 'react'
+import{useState , useEffect} from 'react'
 
 
 //importing our components
@@ -23,6 +23,15 @@ export default function Home() {
   //added the my choice state to store the hand the user chooses during playing 
     const [myChoice, setMyChoice] = useState(-1);
 
+
+    useEffect(() =>{
+      const score = JSON.parse(localStorage.getItem('score'))
+      if(score){
+        setScore(score);
+      }else{
+        setScore(0)
+      }
+    })
   return (
     <div >
       <Head>
