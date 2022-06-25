@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Frontend Mentor - Rock, Paper, Scissors game solution
 
-First, run the development server:
+This is a solution to the [Rock, Paper, Scissors game challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH/hub/rock-paer-scissors-game-in-javascript-SkVGBSaS5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Table of contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Frontend Mentor - Rock, Paper, Scissors game solution](#frontend-mentor---rock-paper-scissors-game-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+  - [Author](#author)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+  - [Author](#author)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+## Overview
+This is a solution to build the rock paper scissors game in Next Js framework
+### The challenge
 
-To learn more about Next.js, take a look at the following resources:
+Users should be able to:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Screenshot
 
-## Deploy on Vercel
+![](./gif/rock-paper-scissors-nextjs.gif)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+### Links
+
+- Solution URL: [Rock paper scissors Game  Next js  github](https://github.com/mcwachira/rock-paper-scissors-nextjs-app)
+- Live Site URL: [Rock paper scissors Game ](https://rock-paper-scissors-nextjs-app.vercel.app/)
+
+
+
+### Built with
+
+- CSS modules 
+- Next Js
+
+
+### What I learned
+
+I was able to practice my Next Js skills  by building this game
+
+### Continued development
+
+some areas I have to work on include using a utility framework like Tailwind css or use Styled components for styling.
+I also need  learn how to use Jest to test my application.
+## Author
+
+- Website - [mcwachira](https:www.mcwachira.dev)
+- Frontend Mentor - [@mcwachira](https://www.frontendmentor.io/profile/mcwachira)
+- Twitter - [@mc_wachira](https://www.twitter.com/mc_wachira)
